@@ -1,0 +1,86 @@
+/* Reset */
+body {
+  margin: unset;
+}
+
+h1 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+ul {
+  margin: unset;
+  padding: unset;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Typography */
+:root {
+  font-family: Arial;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Component */
+
+body {
+  background-color: black;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.section {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: pink;
+  color: mediumaquamarine;
+}
+
+.section h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.section-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.section-group input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.section-group input:focus {
+  outline: 2px solid mediumaquamarine;
+}
+
+.section-group button {
+  flex-shrink: 0;
+  width: 40px;
+  font-size: 2.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: mediumaquamarine;
+  color: pink;
+}
+
+.section-group-list {
+  margin: 10px 0;
+}
