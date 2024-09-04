@@ -3,19 +3,19 @@
 // 2. + 버튼을 클릭했을 때
 
 // ⭐️⭐️ 목적 : 키보드 이벤트가 발생했을 때 해당 이벤트의 세부 정보를 확인하려 만든 함수
-// Internet Explorer에서 주로 사용되었고, 모든 브라우저에서 일관되게 동작하지 않아서 현재는 사용하지 않는 방식
+//  Internet Explorer에서 주로 사용되었고, 모든 브라우저에서 일관되게 동작하지 않아서 현재는 사용하지 않는 방식
 
 // function keyCodeCheck() {
-// console.log(window.event)
+//   console.log(window.event)
 // }
 
 // 이 코드에서 event 파라미터는 개발자가 정의한 것이 아니라 브라우저가 제공하는 표준 이벤트 객체를 가리킴 -> 이 함수가 호출될 때마다 발생한 이벤트의 전체정보를 콘솔에 출력함
 function keyCodeCheck(event) {
-console.log(event)
+  console.log(event)
 
-// 엔터를 치면, ul에 할 일을 li로 만들것이다?
-if (event.key == "Enter") {
-}
+  // 엔터를 치면, ul에 할 일을 li로 만들것이다?
+  if (event.key == "Enter") {
+  }
 }
 
 // 이벤트리스너에 1. 미리 정의된 함수 사용하기 2. 즉석에서 함수 만들기
