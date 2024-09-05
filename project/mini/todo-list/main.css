@@ -30,10 +30,6 @@ body {
 
 /* Component */
 
-body {
-  background-color: black;
-}
-
 .wrapper {
   max-width: 600px;
   margin: 100px auto;
@@ -45,6 +41,36 @@ body {
   border-radius: 10px;
   background-color: pink;
   color: mediumaquamarine;
+}
+
+.mode {
+  box-shadow: inset 0 0 100px white;
+  margin-left: auto;
+  width: 45px;
+  padding: 5px;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.mode::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: mediumaquamarine;
+}
+
+/* 가상요소에서 호버를 주려고 했는데 안된다고 함
+이거 무슨 의미인지 확인 할 것 */
+.mode:hover::before {
+  cursor: pointer;
 }
 
 .section h1 {
