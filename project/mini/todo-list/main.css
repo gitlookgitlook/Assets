@@ -29,6 +29,14 @@ body {
 }
 
 /* Component */
+.type_dark {
+  background-color: black;
+  color: white;
+}
+
+/* .dark_theme {
+  color: plum;
+} */
 
 .wrapper {
   max-width: 600px;
@@ -43,10 +51,10 @@ body {
   color: mediumaquamarine;
 }
 
-.mode {
+.toggle-container {
   box-shadow: inset 0 0 100px white;
   margin-left: auto;
-  width: 45px;
+  width: 42px;
   padding: 5px;
   border-radius: 20px;
 
@@ -57,19 +65,21 @@ body {
   position: relative;
 }
 
-.mode::before {
-  content: " ";
+.toggle-switch {
   position: absolute;
+  top: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
+
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
   background-color: mediumaquamarine;
+
+  transition: all 0.5s;
 }
 
-/* 가상요소에서 호버를 주려고 했는데 안된다고 함
-이거 무슨 의미인지 확인 할 것 */
-.mode:hover::before {
+.toggle-switch:hover {
   cursor: pointer;
 }
 
@@ -97,7 +107,7 @@ body {
   outline: 2px solid mediumaquamarine;
 }
 
-.section-group button {
+.add-btn {
   flex-shrink: 0;
   width: 40px;
   font-size: 2.8rem;
@@ -116,5 +126,13 @@ body {
   box-shadow: inset 0 0 20px blue;
 }
 
-/* 새로운 항목 어떻게 추가할 건지 작성하기 */
-/* 다크 모드도 생각해보기 */
+/* 다크모드 관련 클래스명 */
+.type_dark {
+  background-color: black;
+  color: #9370db;
+}
+
+.type_dark-button {
+  background-color: #9370db;
+  color: black;
+}
