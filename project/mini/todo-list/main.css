@@ -28,15 +28,12 @@ body {
   font-size: 1.6rem;
 }
 
-/* Component */
-.type_dark {
-  background-color: black;
-  color: white;
+/* Commons */
+label {
+  font-weight: 700;
 }
 
-/* .dark_theme {
-  color: plum;
-} */
+/* Component */
 
 .wrapper {
   max-width: 600px;
@@ -49,6 +46,8 @@ body {
   border-radius: 10px;
   background-color: pink;
   color: mediumaquamarine;
+
+  min-height: 500px;
 }
 
 .toggle-container {
@@ -79,7 +78,8 @@ body {
   transition: all 0.5s;
 }
 
-.toggle-switch:hover {
+.toggle-switch:hover,
+.add-btn:hover {
   cursor: pointer;
 }
 
@@ -101,6 +101,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  font-size: 1.8rem;
 }
 
 .section-group input:focus {
@@ -126,7 +127,7 @@ body {
   box-shadow: inset 0 0 20px blue;
 }
 
-/* 다크모드 관련 클래스명 */
+/* 다크모드 관련 클래스명 - add-btn보다 아래에 있어야지 적용 */
 .type_dark {
   background-color: black;
   color: #9370db;
@@ -135,4 +136,15 @@ body {
 .type_dark-button {
   background-color: #9370db;
   color: black;
+}
+
+/* 다크모드 관련 클래스명 - add-btn보다 아래에 있어야지 적용 */
+
+.add-list {
+  margin-top: 20px;
+}
+
+.add-list li {
+  margin: 10px 0;
+  font-size: 1.8rem;
 }

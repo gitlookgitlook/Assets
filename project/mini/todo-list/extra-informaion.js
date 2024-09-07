@@ -25,3 +25,7 @@ function keyCodeCheck(event) {
 document.querySelector("#todoInput").addEventListener("keydown", keyCodeCheck)
 // 엔터키 값을 확인하는 방법 -> 콘솔 로그 확인하기 -> Enter키 누르기 -> 콘솔 확인하기 -> 예전에는 event.keyCode == 13을 가지고 확인 했지만 지금은 ⭐️ event.key == 'Enter'를 사용하는 것을 권장함
 // 바뀐 이유: key를 사용하면 코드가 더 읽기 쉽고, 유지보수가 쉬우며, 다양한 환경에서 더 안정적으로 작동하기 때문에 권장됨.
+
+// 요소.children : DOM 요소의 직계 자식 요소들을 가져오는 속성, 자식 노드들의 배열을 반환함
+// 요소.length : 개수를 알려줌.
+// 요소.appendChild() : 한 요소를 다른 요소의 마지막 자식으로 추가하는 기능
