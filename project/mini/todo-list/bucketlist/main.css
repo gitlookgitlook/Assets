@@ -1,0 +1,111 @@
+/* Typography */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Reset */
+body {
+  margin: unset;
+}
+
+h1 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+ul {
+  padding: unset;
+  margin: unset;
+}
+
+/* Variable */
+:root {
+  --gray-color-20: #eeeeee;
+  --gray-color-30: #d9d9d9;
+  --gray-color-80: #888888;
+
+  --white-color: #ffffff;
+  --pink-color: #ff007a;
+}
+
+/* Component */
+body {
+  background-color: var(--gray-color-30);
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 448px;
+  margin: auto;
+}
+
+.content-box {
+  margin: 110px 0;
+}
+
+.content-header {
+  padding: 46px 39px;
+  border-radius: 20px 20px 0 0;
+  background-color: var(--white-color);
+  color: var(--pink-color);
+  font-weight: 700;
+  font-size: 2.4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.content-header::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 32px;
+  background-color: var(--pink-color);
+
+  /* 🚨 본능적으로 네거티브 마진을 주기 했는데 왜 주었는지 설명해보기 */
+  margin-left: -39px;
+}
+
+.content-header h1 {
+  padding-left: 39px;
+}
+
+.content-main {
+  padding: 38px;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--gray-color-20);
+}
+
+.main-list:last-child {
+  margin-bottom: 0;
+}
+
+.main-item {
+  margin-bottom: 14px;
+}
+
+.main-item div {
+  max-width: 372px;
+  min-height: 44px;
+  border: 4px solid var(--gray-color-30);
+  border-radius: 10px;
+  padding: 15px 14px;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gray-color-80);
+  background-color: #ffffff;
+}
+
+/* 중간에 있는 굵은 선 만들기 */
+/* :hover 되었을 때 만들기 */
+/* content-main 위 아래 마진 달라보이는데 확인해보기 */
