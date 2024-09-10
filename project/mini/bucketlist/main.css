@@ -85,10 +85,13 @@ li {
   background-color: var(--gray-color-20);
 }
 
-.main-list:last-child {
+/* 위 코드가 적용 될 수 있었던 이유 : CSS우선순위 */
+/* 클래스명, 태그명, 가상클래스 -> 10 + 1 + 10 =21 */
+.main-list li:last-child {
   margin-bottom: 0;
 }
 
+/* 클래스명 -> 10 */
 .main-item {
   margin-bottom: 14px;
 }
@@ -108,4 +111,3 @@ li {
 
 /* 중간에 있는 굵은 선 만들기 */
 /* :hover 되었을 때 만들기 */
-/* content-main 위 아래 마진 달라보이는데 확인해보기 */
