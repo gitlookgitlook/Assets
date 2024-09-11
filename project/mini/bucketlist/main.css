@@ -24,6 +24,11 @@ ul {
   margin: unset;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
 /* Variable */
 :root {
   --gray-color-20: #eeeeee;
@@ -32,6 +37,7 @@ ul {
 
   --white-color: #ffffff;
   --pink-color: #ff007a;
+  --blue-color: #759cff;
 }
 
 /* Component */
@@ -88,6 +94,7 @@ li {
   padding: 38px;
   border-radius: 0 0 20px 20px;
   background-color: var(--gray-color-20);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* 위 코드가 적용 될 수 있었던 이유 : CSS우선순위 */
@@ -102,8 +109,6 @@ li {
 }
 
 .main-item div {
-  max-width: 372px;
-  min-height: 44px;
   border: 4px solid var(--gray-color-30);
   border-radius: 10px;
   padding: 15px 14px;
@@ -112,6 +117,21 @@ li {
   font-weight: 700;
   color: var(--gray-color-80);
   background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  line-height: 1;
 }
 
-/* :hover 되었을 때 만들기 */
+.main-item div:hover {
+  border: 2px solid var(--blue-color);
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 0.1);
+
+  /* 🚨 본능적으로 네거티브 마진을 주기 했는데 왜 주었는지 설명해보기 */
+  margin: 0 -20px;
+}
+
+.main-item div img {
+  margin-left: auto;
+}
