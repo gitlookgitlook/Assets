@@ -18,6 +18,10 @@ li {
   list-style-type: none;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+}
 /* Typography */
 :root {
   font-family: Arial;
@@ -26,11 +30,6 @@ li {
 
 body {
   font-size: 1.6rem;
-}
-
-/* Commons */
-label {
-  font-weight: 700;
 }
 
 /* Component */
@@ -147,4 +146,15 @@ label {
 .add-list li {
   margin: 10px 0;
   font-size: 1.8rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+/* 전체적인 li요소 일관된 스타일을 주기 위해서 -> 추가되는 요소에 checkbox와 label간의 간격이 안맞음 */
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

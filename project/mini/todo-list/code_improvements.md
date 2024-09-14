@@ -32,3 +32,17 @@
 ## 해결방안
 
 - 가상 요소 자체에는 마우스 이벤트를 직접적으로 적용 할 수 없음 -> 그리고 토글 스위치는 실제 HTML 요소로 만들어서 사용함
+
+# 9월14일(토) - CRUD단계에서 CR기능 구현 완성
+
+## 현재 문제점 (추후에 1번 문제 해결하기)
+
+1. 새로고침을 하면 추가 한 항목들 RESET -> 5번 단계에서 적용해보기
+2. input에 새로운 값을 입력하면 background-color가 white이지만, 클릭하면 자동제안으로 인해 선택하면 background-color가 흐릿한 파란색으로 보이는데 거슬림
+
+## 해결방안
+
+2. input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 1000px white inset;
+   box-shadow: 0 0 0 1000px white inset;
+   } - 브라우저에서 input 자동완성 사용시 기본적으로 지원하는 css스타일이므로 -webkit-autofill 속성 이용하여 box-shadow 값을 변경해줘야 됨
